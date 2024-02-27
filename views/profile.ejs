@@ -1,0 +1,63 @@
+<%- include('header') %>
+            <!-- END HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                       
+
+                        <section class="vh-100" style="background-color: #f4f5f7;">
+                            <div class="container py-5 h-100">
+                              <div class="row d-flex justify-content-center align-items-center h-100">
+                                <div class="col col-lg-6 mb-4 mb-lg-0">
+                                  <div class="card mb-3" style="border-radius: .5rem;">
+                                    <div class="row g-0">
+                                      <div class="col-md-4 gradient-custom text-center text-white"
+                                        style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+                                        <img src="<%=admin.adminImage%>"
+                                          alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
+                                        <h4 style="font-weight: 500;"><%= admin.name%></h4>
+                                      </div>
+                                      <div class="col-md-8">
+                                        <div class="card-body p-4">
+                                          <h6 style="font-size: 16px; font-weight: 600; color: red;" >Information</h6>
+                                          <hr class="mt-0 mb-4">
+                                          <div class="row pt-1">
+                                            <div class="col-6 mb-3">
+                                              <h6 style="font-size: 16px; font-weight: 600;">Email</h6>
+                                              <p class="text-muted" style="font-size: 14px;"><%= admin.email%></p>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                              <h6 style="font-size: 16px; font-weight: 600;">Gender</h6>
+                                              <p class="text-muted" style="font-size: 14px;"> <%= admin.gender%></p>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                              <h6 style="font-size: 16px; font-weight: 600;">Hobby</h6>
+                                              <p class="text-muted" style="font-size: 14px;"> <%= admin.hobby%></p>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                              <h6 style="font-size: 16px; font-weight: 600;">City</h6>
+                                              <p class="text-muted" style="font-size: 14px;"> <%= admin.city%></p>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                              <h6 style="font-size: 16px; font-weight: 600;">Description</h6>
+                                              <p class="text-muted" style="font-size: 14px;"> <%= admin.description %></p>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                              <a href="/admin/update" class="au-btn au-btn-icon au-btn--green au-btn--small">Edit Profile</a>
+                                            </div>
+                                          </div>
+                                          
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                      
+                        
+                <%- include('footer') %>       
